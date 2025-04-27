@@ -10,7 +10,7 @@ find "$input_directory" -type f | while read file; do
         if [ -f "$output_directory/$file_name_initial" ]; then
                 name_del_ext="${file_name_initial%.*}"
                 ext="${file_name_initial##*.}"
-                
+
                 if [ "$name_del_ext" = "$file_name_initial" ]; then
                         ext=""
                         new_name="${$name_del_ext}${counter}"
